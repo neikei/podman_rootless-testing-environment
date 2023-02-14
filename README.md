@@ -22,7 +22,7 @@
 
 ```bash
 # Run
-podman run -it -v /home/vagrant/volume/:/container/volume:Z --name mycontainer alpine /bin/ash
+podman run -dt -v /home/vagrant/volume/:/container/volume:Z --name mycontainer alpine /bin/ash
 
 # Show
 podman ps
@@ -46,6 +46,9 @@ podman stop mycontainer
 
 # Start
 podman start mycontainer
+
+# Stop
+podman stop mycontainer
 
 # Remove
 podman rm mycontainer
